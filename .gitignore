@@ -1,0 +1,9 @@
+# GIT IGNORE
+
+.settings/
+out/
+build/
+sysroot/
+tools/
+src/
+Makefile

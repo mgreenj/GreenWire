@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "GreenWire",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/greensrc/include",
+        "${workspaceFolder}/greennet/include",
+        "${workspaceFolder}/greenperf/include",
+        "${workspaceFolder}/../linux-headers/usr/include",
+        "${workspaceFolder}/../linux-headers/usr/src/linux-headers-6.14.0-22-generic/include",
+        "${workspaceFolder}/../linux-headers/usr/src/linux-headers-6.14.0-22-generic/include/uapi"
+      ],
+      "compilerPath": "${workspaceFolder}/../tools/bin/${env:TARGET}-gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "${default}"
+    }
+  ],
+  "version": 4
+}
