@@ -7,8 +7,7 @@
 - [Build GreenWire Application](#application-setup)
 
 ## Introduction
-This is a hobby project that will be used to demonstrate low-latency development with C.  I will use DPDK
-to streamline the development process.
+This is an independent project that incorporates a custom XDP Poll Mode Driver and Data Aggregator, with DPDK, to fetch massive amounts of data for use in HPC. A Django frontend and Performance analysis tools can be used to benchmark and evaluate performance improvements.
 
 ## Blog
 I will [blog](https://blog.thecodeguardian.dev) throughout the development to discuss some of the more important or challenging optimizations.  I may include a few vlogs as well; if I do, the videos will be linked on my blog.
