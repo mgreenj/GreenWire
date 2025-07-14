@@ -1,3 +1,6 @@
 [submodule "deps/dpdk"]
 	path = deps/dpdk
 	url = https://github.com/DPDK/dpdk.git
+[submodule "deps/spack"]
+	path = deps/spack
+	url = https://github.com/spack/spack
