@@ -13,7 +13,6 @@ class Greenwire(CMakePackage):
 
     # Declare dependencies
     depends_on('dpdk')
-    depends_on('libbpf')
     depends_on('cmake', type='build')
 
     def cmake_args(self):
@@ -27,5 +26,3 @@ class Greenwire(CMakePackage):
     def setup_build_environment(self, env):
         # Optional: You can set custom env vars if needed
         env.set('DPDK_DIR', self.spec['dpdk'].prefix)
-        env.set('LIBBPF_DIR', self.spec['libbpf'].prefix)
-

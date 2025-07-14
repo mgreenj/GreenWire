@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   # add package specs to the `specs` list
-  specs: ['dpdk', 'libbpf', 'cmake', 'greenwire@master']
+  specs: ['dpdk', 'cmake', 'greenwire@master']
   view: true
   concretizer:
     unify: true
