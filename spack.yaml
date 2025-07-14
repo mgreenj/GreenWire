@@ -5,9 +5,12 @@ spack:
     - libbpf
     - cmake
     - greenwire@main
+
   develop:
     greenwire:
       path: ./spack/packages/greenwire
+
   view: true
+
   concretizer:
     unify: true
