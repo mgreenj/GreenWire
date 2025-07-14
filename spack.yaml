@@ -1,10 +1,15 @@
 # This is a Spack Environment file.
 #
-# It describes a set of packages to be installed, along with
-# configuration settings.
+# 
+# Spack configuration settings in spack.yaml
 spack:
-  # add package specs to the `specs` list
-  specs: ['dpdk', 'cmake', 'greenwire@master']
+  specs: [
+    'dpdk',
+    'pkg-config',
+    'libelf',
+    'cmake',
+    'greenwire@master'
+  ]
   view: true
   concretizer:
     unify: true

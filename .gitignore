@@ -1,6 +1,7 @@
 # GIT IGNORE
 .DS_Store/
 .settings/
+.spack-env/
 out/
 build/
 sysroot/
