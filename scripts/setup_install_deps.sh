@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "[+] Updating APT cache..."
-sudo apt update && upgrade 
+sudo apt update && apt upgrade 
 
 echo "[+] Installing system build dependencies..."
 sudo apt install -y \
