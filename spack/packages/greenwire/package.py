@@ -4,8 +4,8 @@ from spack.package import *
 class Greenwire(CMakePackage):
     """GreenWire: A low-latency network application using DPDK, XDP, and custom drivers."""
 
-    homepage = "https://github.com/youruser/greenwire"
-    git      = "https://github.com/youruser/greenwire.git"
+    homepage = "https://github.com/mgreenj/GreenWire"
+    git      = "https://github.com/mgreenj/GreenWire.git"
 
     maintainers = ['your-github-username']
 
