@@ -1,0 +1,15 @@
+spack:
+  develop:
+    greenwire:
+      path: ./spack/packages/greenwire
+
+  specs:
+    - dpdk
+    - libbpf
+    - cmake
+    - greenwire@main
+
+  view: true
+
+  concretizer:
+    unify: true

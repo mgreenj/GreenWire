@@ -6,4 +6,5 @@ build/
 sysroot/
 tools/
 src/
+/spack.lock
 Makefile
