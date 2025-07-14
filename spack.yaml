@@ -1,16 +1,16 @@
-
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
 spack:
-  specs:
-    - dpdk
-    - libbpf
-    - cmake
-    - greenwire@main
-
-  develop:
-    greenwire:
-      path: ./spack/packages/greenwire
-
+  # add package specs to the `specs` list
+  specs: ['dpdk', 'libbpf', 'cmake', 'greenwire@master']
   view: true
-
   concretizer:
     unify: true
+  develop:
+    greenwire:
+      spec: greenwire@master
+      path: ./spack/packages/greenwire
+  repos:
+    - ./spack

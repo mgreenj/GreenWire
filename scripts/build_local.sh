@@ -4,13 +4,13 @@ set -euo pipefail
 # Ensure submodules are available
 git submodule update --init --recursive
 
+# Install dependencies
+./setup_install_deps.sh
+
 # Source Spack and activate env
 . deps/spack/share/spack/setup-env.sh
 spack env activate .
 spack install
-
-# Install dependencies
-./setup_install_deps.sh
 
 # DPDK Build Environment
 ./setup_conf_dpdk_env.sh
