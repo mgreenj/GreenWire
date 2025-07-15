@@ -24,14 +24,6 @@ spack:
       buildable: true
     dpdk:
       require: "@23.03"
-  
-  develop:
-    greenwire:
-      spec: greenwire@master
-      path: ./spack/packages/greenwire
-    dpdk:
-      spec: dpdk@23.03
-      path: ./spack/packages/dpdk
 
   repos:
     - ./spack/repos/local
