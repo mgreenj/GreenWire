@@ -7,12 +7,12 @@ class Greenwire(CMakePackage):
     homepage = "https://github.com/mgreenj/GreenWire"
     git      = "https://github.com/mgreenj/GreenWire.git"
 
-    maintainers = ('mgreenj')
+    maintainers = ['mgreenj']
 
     version('master', branch='master')
 
     # Declare dependencies
-    depends_on('dpdk')
+    depends_on('dpdk@23.03')
     depends_on('libelf')
     depends_on('cmake@3.16.9', type='build')
     depends_on('pkg-config', type='build')
