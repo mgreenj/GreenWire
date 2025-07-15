@@ -19,6 +19,7 @@ class Dpdk(MesonPackage):
     depends_on("py-pyelftools")
     depends_on("numactl")
     depends_on("libpcap")
+    depends_on("libbsd")
 
     def meson_args(self):
         return [
