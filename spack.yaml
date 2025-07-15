@@ -10,7 +10,7 @@ spack:
     - py-pyelftools
     - numactl
     - libpcap
-    - green@master
+    - greenwire@master
 
   view: true
 
