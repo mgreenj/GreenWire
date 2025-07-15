@@ -20,6 +20,7 @@ class Dpdk(MesonPackage):
     depends_on("numactl")
     depends_on("libpcap")
     depends_on("libbsd")
+    depends_on("libmd")
 
     def meson_args(self):
         return [
