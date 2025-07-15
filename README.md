@@ -1,3 +1,6 @@
+
+[![wakatime](https://wakatime.com/badge/github/mgreenj/GreenWire.svg)](https://wakatime.com/badge/github/mgreenj/GreenWire)
+---
 # Low-Latency Data Aggregator
 
 ## Table of Contents
