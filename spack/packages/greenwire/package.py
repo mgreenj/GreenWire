@@ -7,7 +7,7 @@ class Greenwire(CMakePackage):
     homepage = "https://github.com/mgreenj/GreenWire"
     git      = "https://github.com/mgreenj/GreenWire.git"
 
-    maintainers = ['mgreenj']
+    maintainers = ('mgreenj')
 
     version('master', branch='master')
 

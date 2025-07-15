@@ -3,19 +3,27 @@
 # 
 # Spack configuration settings in spack.yaml
 spack:
-  specs: [
-    'dpdk',
-    'pkg-config',
-    'libelf',
-    'cmake',
-    'greenwire@master'
-  ]
+  specs:
+    - dpdk@23.03
+    - cmake
+    - ninja
+    - py-pyelftools
+    - numactl
+    - libpcap
+    - green@master
+
   view: true
+
   concretizer:
     unify: true
+
   develop:
     greenwire:
       spec: greenwire@master
       path: ./spack/packages/greenwire
+    dpdk:
+      spec: dpdk@23.03
+      path: ./spack/packages/dpdk
+
   repos:
     - ./spack
