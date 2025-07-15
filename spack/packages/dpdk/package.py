@@ -16,7 +16,7 @@ class Dpdk(MesonPackage):
     build_system(default="meson")
 
 
-    depends_on("cmake", type="build")
+    depends_on("cmake@3.16.9", type="build")
     depends_on("ninja", type="build")
     depends_on("py-pyelftools")
     depends_on("numactl")

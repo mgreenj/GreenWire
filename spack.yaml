@@ -5,11 +5,12 @@
 spack:
   specs:
     - dpdk@23.03
-    - cmake
+    - cmake3.16.9
     - ninja
     - py-pyelftools
     - numactl
     - libpcap
+    - pkg-config
     - greenwire@master
 
   view: true
@@ -17,6 +18,11 @@ spack:
   concretizer:
     unify: true
 
+  packages:
+    cmake:
+      version: [3.16.9]
+      buildable: true
+  
   develop:
     greenwire:
       spec: greenwire@master

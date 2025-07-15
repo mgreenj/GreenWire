@@ -14,7 +14,7 @@ class Greenwire(CMakePackage):
     # Declare dependencies
     depends_on('dpdk')
     depends_on('libelf')
-    depends_on('cmake', type='build')
+    depends_on('cmake@3.16.9', type='build')
     depends_on('pkg-config', type='build')
 
     def cmake_args(self):
