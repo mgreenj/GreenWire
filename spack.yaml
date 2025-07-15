@@ -5,7 +5,7 @@
 spack:
   specs:
     - dpdk@23.03
-    - cmake3.16.9
+    - cmake@3.16.9
     - ninja
     - py-pyelftools
     - numactl
