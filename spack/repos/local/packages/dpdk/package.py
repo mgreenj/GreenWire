@@ -23,18 +23,10 @@ class Dpdk(MesonPackage):
     depends_on("libmd")
 
     def setup_build_environment(self, env):
-            env.append_path('LIBRARY_PATH', self.spec['libmd'].prefix.lib)
-            env.append_path('LIBRARY_PATH', self.spec['libbsd'].prefix.lib)
+        env.append_flags('LDFLAGS', '-L{0} -lmd'.format(self.spec['libmd'].prefix.lib))
+        env.append_flags('LDFLAGS', '-L{0} -lbsd'.format(self.spec['libbsd'].prefix.lib))
+        env.prepend_path('PKG_CONFIG_PATH', self.spec['libmd'].prefix.lib.pkgconfig)
+        env.prepend_path('PKG_CONFIG_PATH', self.spec['libbsd'].prefix.lib.pkgconfig)
 
-            env.append_path('LD_LIBRARY_PATH', self.spec['libmd'].prefix.lib)
-            env.append_path('LD_LIBRARY_PATH', self.spec['libbsd'].prefix.lib)
-
-            env.prepend_path('PKG_CONFIG_PATH', self.spec['libmd'].prefix.lib.pkgconfig)
-            env.prepend_path('PKG_CONFIG_PATH', self.spec['libbsd'].prefix.lib.pkgconfig)
-        
     def meson_args(self):
-        return [
-            '-Dc_args=-Wno-pedantic'
-            '-Dplatform=linux',
-            '-Dextra_ldflags=-lmd -lbsd'
-        ]
+        return ['-Dc_args=-Wno-pedantic']
